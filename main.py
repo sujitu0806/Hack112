@@ -17,6 +17,7 @@ def onAppStart(app):
     app.dotDx, app.dotDy = 15, 15
     app.dots = []
     app.dotsDrawn = False
+    app.angle = 0
 
 
 def redrawAll(app):
@@ -31,9 +32,6 @@ def redrawAll(app):
     # drawRect(0,80,20,40, fill=rgb(*app.darkColor))
     # drawRect(0,120,20,40, fill=rgb(*app.midColor))
     # drawRect(0,200,20,40, fill=rgb(*app.lightColor))
-
-
-    
     # drawRect(120,160,150,45,fill = None,border = 'black')
     # drawLabel('Select file', 195, 182.5, fill='black', size=13)
 
@@ -91,6 +89,7 @@ def onKeyPress(app, key):
 def onStep(app):
     app.titleOffset += 0.1
     createDots(app)
+    app.angle += 5
 
 
 

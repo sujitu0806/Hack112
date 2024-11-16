@@ -8,6 +8,7 @@ from fer import FER
 happyCol = [102,255,255]
 sadCol = [255, 51, 51]
 angryCol = [51, 51, 255]
+surpriseCol = [255, 0, 255]
 
 prevCols = ['angry', 'sad', 'happy']
 
@@ -261,6 +262,8 @@ def create_dynamic_comic_video(colors, input_path, output_path=None):
                     elif dominant_emotion == "surprise":
                         color_boost = 50  # High saturation for surprise
                         outline_strength = 5
+
+                        gradientColor(midCol, surpriseCol)
                 else:
                     color_boost = 0  # Neutral
                     outline_strength = 9
