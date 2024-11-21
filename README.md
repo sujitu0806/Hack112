@@ -1,4 +1,4 @@
-# Hack112
+# Hack112: Comic-ize
 This project was done in under 20 hours (from 6PM to 2PM on the next day)
 The premise of this project was to take a video and turn it comic-like (choppy animation, simple color scheme, divisions by light, dark, and medium shading)
 with the added feature of emotion detection; It detects 1 of 4 emotions a person can demonstrate and converts the color scheme of the video to a color
